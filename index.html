@@ -6,7 +6,7 @@
     <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <style type="text/css">
       body {
-      padding-top:20px;
+      padding-top: 20px;
       padding-bottom: 40px;
       }
       .container {
@@ -18,10 +18,19 @@
       .navigation, .pitch, .section1, .section2, .faq, .footer {
       padding: 10px 0px 10px 0px;
       }
+      .video, .thermometer, .order, .social {
+      border: 1px dotted;
+      text-align: center;
+      }
       .video {
       /*internal borders have 1px witdth, thus need to add 4x1 px to 120px */
       height: 124px;
       line-height:124px;
+      }
+      .thermometer, .order, .social {
+      /*  line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+      height: 40px;
+      line-height: 40px;
       }
       div.row {
       border: 1px solid;
@@ -40,7 +49,7 @@
       <div class="span4 logo">
 	About
       </div>
-   </div>
+    </div>
    <div class="row heading">
      <div class="span12">
        <h1>BitStarter Title</h1>
@@ -50,19 +59,20 @@
      <div class="span12">
        <p class="lead">This is my first bitstarter project</p>
      </div>
-     <div class="row pitch">
-       <div class="span6 video">
+   </div>  
+   <div class="row pitch">
+     <div class="span6 video">
 	 Video
-       </div>
+     </div>
      <div class="span6">
        <div class="thermometer">
-	 Thermometer
+  	 Thermometer
        </div>
        <div class="order">
-	 Order
+  	 Order
        </div>
        <div class="social">
-	 Social
+	   Social
        </div>
      </div>
    </div>
